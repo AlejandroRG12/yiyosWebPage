@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+    background-image: url('../src/img/playa.jpg');
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .description {
+    background-color: #F5F5F5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+  }
+
+  .description h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .description p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
