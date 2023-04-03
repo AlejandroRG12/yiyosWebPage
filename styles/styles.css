@@ -10,14 +10,30 @@ html {
 }
 
 header {
-    background-image: url('../src/img/playa.jpg');
-    background-size: cover;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-  }
+  position: fixed;
+  top: 0;
+  background-size: cover;
+  background-color: rgb(25, 28, 30);
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: top 0.3s ease-in-out;
+}
+
+header.scrolled {
+  top: -100px;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
   
 img {
   position: relative;
