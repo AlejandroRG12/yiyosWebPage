@@ -123,36 +123,48 @@ img {
   margin: 10px 20px;
   color: #FFA500;
 } */
+/* Sección de menú */
+.menu {
+  text-align: center;
+  margin: 50px;
+}
+
+.menu h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+/* Platillo */
 .platillo {
   display: flex;
   align-items: center;
-  margin-bottom: 50px;
+  justify-content: space-between;
+  margin: 50px 0;
 }
 
 .platillo img {
-  width: 150px;
-  height: auto;
-  margin-right: 30px;
-  margin-left: 20px;
+  width: 40%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-right: 20px;
 }
 
-.platillo .info {
-  display: flex;
-  flex-direction: column;
+.platillo div {
+  width: 60%;
+  text-align: left;
 }
 
 .platillo h3 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 10px;
 }
 
 .platillo p {
   font-size: 1.6rem;
-  line-height: 2.6rem;
   margin-bottom: 10px;
 }
 
 .platillo span {
-  font-size: 1.8rem;
-  font-weight: bold;
+  font-size: 2rem;
+  color: #6DAE2F;
 }
