@@ -10,33 +10,70 @@ html {
 }
 
 header {
-    background-image: url('../src/img/playa.jpg');
-    background-size: cover;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-  }
+  position: fixed;
+  top: 0;
+  background-size: cover;
+  background-color: rgb(25, 28, 30);
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: top 0.3s ease-in-out;
+}
+
+header.scrolled {
+  top: -100px;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
   
-  img {
-    max-width: 100%;
-    max-height: 100%;
-  }
+img {
+  position: relative;
+  max-width: 80%;
+  max-height: 80%;
+}
 
-  .description {
-    background-color: #F5F5F5;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 30px;
-  }
+/* Binevenida */
+.bienvenida {
+  background-image: linear-gradient(rgba(58, 58, 58, 0.4), rgba(0, 0, 0, 0.4)), url('../src/img/fondo-bienvenida.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 10%;
+}
 
-  .description h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
+.bienvenida h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: rgb(251, 249, 217);
+}
 
-  .description p {
-    font-size: 1.6rem;
-    line-height: 1.5;
-  }
+.bienvenida p {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: rgb(251, 249, 217);
+}
+
+/* Menu */
+.menu {
+  text-align: center;
+  margin: 50px;
+}
+
+.menu h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
